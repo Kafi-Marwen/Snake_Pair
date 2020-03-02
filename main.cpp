@@ -1,6 +1,6 @@
 /*
  Projet: snake
- Auteur: Houdi Rafion - Marwen Kafi
+ Auteur: (partner)Houdi Rafion - Marwen Kafi
 */
 #include <iostream>
 #include "Point.h"
@@ -16,38 +16,54 @@ int main()
     Board *fenetre;
     // initialisation des pointeurs
     fenetre = Board::getInstance ();
+    char input;
 
     Point p(10,4);
     p.drawPoint();
+                     //Permet d'effectuer les mouvements haut , bas ,gauche ,droite
+    do{
 
-    Point p2(10,5);
-    p2.drawPoint();
-    
-    
-   
-    p.moveDown();
-    p.drawPoint();
+	input= getchar();
+	p.erasePoint();              //permet d'effacer le point
+	switch(input)
 
-    p.moveUp();
-    p.drawPoint();
+	{
+	 	case 'z':
+			p.moveUp();
+			break;
+	
+		case 'q':
+			p.moveLeft();
+			break;
 
-    p.moveLeft();
-    p.drawPoint();
-    
-    p.moveRight();
-    p.drawPoint();
+		case 's':
+			p.moveDown();
+			break;
 
-    p2.moveDown();
-    p2.drawPoint();
+		case 'd':
+			p.moveRight();
+			break;
+	}
+	
+	p.drawPoint();   //SERT A AFFICHER LES POINTS
 
-    p2.moveUp();
-    p2.drawPoint();
+}while(input != 'x');
 
-    p2.moveLeft();
-    p2.drawPoint();
 
-    p2.moveRight();
-    p2.drawPoint();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //cout << "press any key to quit" << endl;
     getchar();
     fenetre->kill();
