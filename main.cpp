@@ -12,6 +12,12 @@ using namespace std;
 int main()
 {
 
+	
+
+
+
+
+
     // pointeurs sur l'unique instance de la classe UniqueObject
     Board *fenetre;
     // initialisation des pointeurs
