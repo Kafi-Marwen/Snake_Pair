@@ -21,21 +21,21 @@ void Point::setPoint(int x, int y)
     this->m_y = y;
 }
 
-void Point::moveDown()
+void Point::moveDown()    //Sert a se déplacer vers le bas.
 {
     m_y++;
 }
 
-void Point::moveUp()
+void Point::moveUp()   //Sert a se déplacer vers le heut.
 {
     m_y--;
 }
 
-void Point::moveRight()
+void Point::moveRight()  //Sers a se déplacer vers la droite.
 {
     m_x++;
 }
-void Point::moveLeft()
+void Point::moveLeft()   //Sert a se déplacer vers la gauche
 {
     m_x--;
 }

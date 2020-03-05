@@ -1,6 +1,6 @@
 /*
  Projet: snake
- Auteur: (partner)Houdi Rafion - Marwen Kafi
+ Auteur: Houdi Rafion - Marwen Kafi
 */
 #include <iostream>
 #include "Point.h"
@@ -27,7 +27,7 @@ int main()
     Point p(10,4);
     p.drawPoint();
                      //Permet d'effectuer les mouvements haut , bas ,gauche ,droite
-    do{
+  do{
 
 	input= getchar();
 	p.erasePoint();              //permet d'effacer le point
