@@ -24,6 +24,7 @@ private:
 	Point serpent[20];
 	int m_index;
 	char m_direction;
+	
 };
 
 

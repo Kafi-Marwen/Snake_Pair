@@ -8,7 +8,7 @@ using namespace std;
 {      
 
     this->m_index=0;
- 
+    char m_direction;
 }
                                               
 void Snake::ajouterPoint(Point p)     // DEFINITION DE LA METHODE ajouterPoint
@@ -42,21 +42,21 @@ void Snake::afficher()                 //DEFINITION DE LA METHODE afficher
 	
 	void Snake::moveDown()    //Sert a se déplacer vers le bas.
    {
-    m_y++;
+    m_direction='s';
    }
 
     void    Snake::moveUp()   //Sert a se déplacer vers le heut.
    {
-    m_y--;
+    m_direction='z';
    }
 
     void Snake::moveRight()  //Sers a se déplacer vers la droite.
    {
-    m_x++;
+    m_direction='d';
    }
     void Snake::moveLeft()   //Sert a se déplacer vers la gauche
    {
-    m_x--;
+    m_direction='q';
    }
 
     void Snake::deplacerPoint()            //DEFINITION DE LA METHODE deplacerPoint
