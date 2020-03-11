@@ -34,13 +34,13 @@ int main()
     serpent.ajouterPoint(p1);
     serpent.ajouterPoint(p2);
     
-    serpent.afficher();       //afficher le tableau serpent
+    //serpent.afficher();       //afficher le tableau serpent
     serpent.deplacerPoint();  //deplacer les points dans le tableau
     usleep(500000);            //attente avant l'ajout d'un nouveau point dans le tableau
     serpent.afficher();
 
                      //Permet d'effectuer les mouvements haut , bas ,gauche ,droite
-  do{
+  /*do{
 
 	input= getchar();
 	p.erasePoint();              //permet d'effacer le point
@@ -68,6 +68,7 @@ int main()
 
 }while(input != 'x');
 
+*/
 
 
 

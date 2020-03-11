@@ -30,7 +30,7 @@ void Snake::ajouterPoint(Point p)     // DEFINITION DE LA METHODE ajouterPoint
     
 void Snake::afficher()                 //DEFINITION DE LA METHODE afficher
 	{
-	    for (int i=0; i <= m_index; i++)
+	    for (int i=0; i < m_index; i++)
 	    
 	    {   
 	         serpent[m_index-1].erasePoint();

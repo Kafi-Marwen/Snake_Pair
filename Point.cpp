@@ -7,7 +7,7 @@ using namespace std;
 
 Point::Point()
 {
-    m_x = m_y = 10;
+    m_x = m_y = 14;
 }
 Point::Point(int x, int y)
 {
