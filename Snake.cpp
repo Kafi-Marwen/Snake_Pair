@@ -8,9 +8,9 @@ using namespace std;
 {      
 
     this->m_index=0;
-    
+ 
 }
-                                    
+                                              
 void Snake::ajouterPoint(Point p)     // DEFINITION DE LA METHODE ajouterPoint
     {
      
@@ -40,14 +40,33 @@ void Snake::afficher()                 //DEFINITION DE LA METHODE afficher
 	          
 	}
 	
-void Snake::deplacerPoint()            //DEFINITION DE LA METHODE deplacerPoint
+	void Snake::moveDown()    //Sert a se déplacer vers le bas.
+   {
+    m_y++;
+   }
 
-{
+    void    Snake::moveUp()   //Sert a se déplacer vers le heut.
+   {
+    m_y--;
+   }
+
+    void Snake::moveRight()  //Sers a se déplacer vers la droite.
+   {
+    m_x++;
+   }
+    void Snake::moveLeft()   //Sert a se déplacer vers la gauche
+   {
+    m_x--;
+   }
+
+    void Snake::deplacerPoint()            //DEFINITION DE LA METHODE deplacerPoint
+
+   {
     for (int i =0; i <= m_index; i++)
     {
-        serpent[i].moveRight();
+      
     }
 
-}
+  }
 
 

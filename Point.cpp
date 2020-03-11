@@ -26,12 +26,12 @@ void Point::moveDown()    //Sert a se déplacer vers le bas.
     m_y++;
 }
 
-void Point::moveUp()   //Sert a se déplacer vers le heut.
+void Point::moveUp()   //Sert a se déplacer vers le haut.
 {
     m_y--;
 }
 
-void Point::moveRight()  //Sers a se déplacer vers la droite.
+void Point::moveRight()  //Sert a se déplacer vers la droite.
 {
     m_x++;
 }

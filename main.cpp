@@ -40,7 +40,7 @@ int main()
     serpent.afficher();
 
                      //Permet d'effectuer les mouvements haut , bas ,gauche ,droite
-  /*do{
+  do{
 
 	input= getchar();
 	p.erasePoint();              //permet d'effacer le point
@@ -68,7 +68,7 @@ int main()
 
 }while(input != 'x');
 
-*/
+
 
 
 
