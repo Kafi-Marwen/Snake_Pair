@@ -5,8 +5,8 @@
 #include <iostream>
 #include "Point.h"
 #include "Board.h"
-
-
+#include "Snake.h"
+#include <unistd.h>
 using namespace std;
 
 int main()
@@ -24,8 +24,21 @@ int main()
     fenetre = Board::getInstance ();
     char input;
 
-    Point p(10,4);
-    p.drawPoint();
+    Point p(10,4);         //DECLARATION DES POINTS QUI SERONT AJOUTER DANS LE TABLEAU
+    Point p1(11,4);
+    Point p2(12,4);
+    p.drawPoint();  // SERT A AFFICHER LES POINTS
+    
+    Snake serpent;
+    serpent.ajouterPoint(p);        //SERT A AJOUTER LES POINTS DANS LE TABLEAU
+    serpent.ajouterPoint(p1);
+    serpent.ajouterPoint(p2);
+    
+    serpent.afficher();       //afficher le tableau serpent
+    serpent.deplacerPoint();  //deplacer les points dans le tableau
+    usleep(500000);            //attente avant l'ajout d'un nouveau point dans le tableau
+    serpent.afficher();
+
                      //Permet d'effectuer les mouvements haut , bas ,gauche ,droite
   do{
 

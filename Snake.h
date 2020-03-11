@@ -7,11 +7,15 @@ public:
 
 	Snake();
 
-	void ajouterPoint(Point p);
+	
 	void afficher();
-
+	void deplacerPoint();
+	void ajouterPoint(Point p);
+	
 private: 
 	Point serpent[20];
 	int m_index;
 };
+
+
 	
